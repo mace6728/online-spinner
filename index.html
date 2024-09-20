@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Wheel Spinner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Number Wheel Spinner</h1>
+        
+        <div class="input-container">
+            <label for="minRange">Enter minimum Number :</label>
+            <input type="number" id="minRange" placeholder="Enter min (1-10)" min="1" max="100">
+        </div>
+        <div class="input-container">
+            <label for="maxRange">Enter maximum Number :</label>
+            <input type="number" id="maxRange" placeholder="Enter max (1-10)" min="1" max="100">
+        </div>
+        <button id="spinButton">Spin the Wheel</button>
+        
+
+        <!-- Wheel Container -->
+        <div class="wheel-container">
+            <div id="arrow"></div> <!-- Arrow at the top -->
+            <div id="wheel">
+                <!-- Wheel sectors will be generated dynamically -->
+            </div>
+        </div>
+
+        <!-- Output result -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
